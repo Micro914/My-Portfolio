@@ -256,6 +256,34 @@ h1, h2, h3, h4, h5, h6 {
 	width: auto;
 	margin-top: -4em;
 }
+#teaching .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 40px;
+	justify-items: center;
+}
+@media only screen and (max-width: 700px) {
+	#teaching .grid {
+		grid-template-columns: 1fr ;
+		grid-template-rows: 1fr 1fr 1fr ;
+	}
+  }
+#teaching .box {
+	background-color: red;
+	
+	margin-bottom: 20px;
+}
+#teaching img {
+	width: 100%;
+	height: 100%;
+}
+#teaching p {
+	font-size: 1.4em;
+	text-align: center;
+	font-weight: bolder;
+	color: #595959;
+}
 
 
 
