@@ -3,6 +3,14 @@
 /*********** Global Styles********/
 
 body, html {
+	--color1: #E3E3E3;
+--color2: #F33F12;
+--color3: #8A8A8B;
+--color4: #008000;
+--color5: #8a8a8a;
+--color6: #70e000;
+--color7: #2ec4b6;
+
 		background-color: #E3E3E3;
 }
 
@@ -113,14 +121,14 @@ h1, h2, h3, h4, h5, h6 {
 .cta .cta-button {
 		color: #cc4b37;
 		text-transform: uppercase;
-		border: 2px solid rgba(255, 103, 68, 0.91);
+		border: 2px solid var(--color4);
 		border-radius: 50px;
 		background: white;
 }
 
 .cta .cta-button:hover, .cta .cta-button:focus {
 		box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
-		background-color: rgba(255, 103, 68, 0.91);
+		background-color: var(--color4);
 		color: white;
 }
 
@@ -140,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** Experience ***/
 #experience {
-	background-color: #4c6d86;
+	background-color: #577590;
 	padding: 6em 4em 5.6em;
 }
 
@@ -155,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #experience i {
-	color: rgb(255, 138, 89);
+	color: var(--color7);
 	font-size: 4em;
 }
 
@@ -171,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .experience-topics ul li {
 	list-style: none;
-	color: #bbd2ff;
+	color: #ccff33;
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
 }
@@ -183,7 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #work h2 {
-	color: #FF6945;
+	color: var(--color7);
 	margin-bottom: .7em;
 }
 
@@ -209,11 +217,11 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 2em 0 -0.1em;
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
-	color: #ff7654;
+	color: var(--color6);
 }
 
 .details i {
-	color: #ff7654;
+	color: var(--color6);
 	margin-right: 1em;
 }
 
@@ -226,14 +234,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .details a, .details a:link, .details a:active{
-		color: rgba(255, 103, 68, 0.91);
-		border: 2px solid rgba(255, 103, 68, 0.91) !important;
+		color: var(--color4);
+		border: 2px solid var(--color4) !important;
 		background-color: #fff;
 }
 
 .details a:hover, .details a:focus {
 		/*box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);*/
-		background-color: rgba(255, 103, 68, 0.91) !important;
+		background-color: var(--color4) !important;
 		color: #fff;
 }
 
@@ -263,6 +271,12 @@ h1, h2, h3, h4, h5, h6 {
     grid-gap: 40px;
 	justify-items: center;
 }
+@media only screen and (max-width: 900px) {
+	#teaching .grid {
+		grid-template-columns: 1fr 1fr ;
+		grid-template-rows: 1fr 1fr ;
+	}
+  }
 @media only screen and (max-width: 700px) {
 	#teaching .grid {
 		grid-template-columns: 1fr ;
@@ -286,28 +300,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*** Footer Call-to-action ***/
 #footer-cta {
-	background-color: rgba(255, 103, 68, 0.91);
+	background-color: var(--color4);
 	padding: 6em 4em 5.6em;
 }
 
@@ -334,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer-cta a:hover {
 	background: #fff;
-	color: rgba(255, 103, 68, 0.91);
+	color: var(--color4);
 	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
 }
 
@@ -345,7 +340,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer #logo {
-	background-color: rgba(255, 103, 68, 0.91);
+	background-color: var(--color4);
 	border-radius: 50%;
 	color: #fff;
 	padding: .4em;
